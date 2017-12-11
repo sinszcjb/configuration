@@ -1,0 +1,31 @@
+dubbo:
+  application:
+    name: ${spring.application.name}
+  check: false
+  registry:
+    address: zookeeper://127.0.0.1:2888
+    username:
+    password:
+  protocol:
+    name: dubbo
+    host: 127.0.0.1
+    port: 20820
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 1
+    pool:
+      min-idle: 50
+      max-idle: 10
+      max-active: 100
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017
+      database: bxfs
+      repositories:
+        enabled: true
+
+bizs:
+  value: 100
